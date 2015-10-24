@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Werbung</string>
+
+    <string name="next_tab">Next Tab</string>
+    <string name="prev_tab">Prev Tab</string>
+    <string name="create">Create</string>
+
+    <string name="title_section1">Log Issue</string>
+    <string name="title_section2">History</string>
+    <string name="title_section3">My Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="login_instruction">Comcast Employees: Log in with your NT credentials</string>
+    <string name="login_error">Login failed - please try again</string>
+    <string name="OK">OK</string>
+    <string name="invalid_pwd_title">Password Invalid!</string>
+    <string name="invalid_pwd_message">Your password appears to be invalid.\nPlease re-enter your network credentials</string>
+    <string name="timeout_title">Time Out!</string>
+    <string name="timeout_message">You have timed out.\nPlease re-enter your credentials</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="Log_Out">Log Out</string>
+    <string name="action_save">Save</string>
+    <string name="action_complete_profile">Complete Profile</string>
+</resources>

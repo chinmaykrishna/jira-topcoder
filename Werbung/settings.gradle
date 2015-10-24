@@ -1,0 +1,5 @@
+include ':app'
+include ':volley'
+project(':volley').projectDir = new File('../volley/')
+include ':jiraRestApi'
+project(':jiraRestApi').projectDir = new File('../android-JiraLibrary/jiraRestApi/')

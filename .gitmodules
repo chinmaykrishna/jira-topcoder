@@ -1,0 +1,6 @@
+[submodule "android-JiraLibrary"]
+	path = android-JiraLibrary
+	url = git@gitlab.com:Hercules-ProjectWerbung/android-JiraLibrary.git
+[submodule "volley"]
+	path = volley
+	url = https://android.googlesource.com/platform/frameworks/volley

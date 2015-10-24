@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hercules.werbung.NavigationDrawerActivity">
+    <item
+        android:id="@+id/action_edit"
+        android:title="@string/action_edit"
+        app:showAsAction="withText|ifRoom" />
+</menu>

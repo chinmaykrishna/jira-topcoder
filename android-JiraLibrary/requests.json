@@ -1,0 +1,378 @@
+C:\Users\Guillaume>curl -u topcoder:pass1234 -X GET -H "Content-Type: application/json" "https://adqa-dev.atlassian.net/rest/api/2/issue/createmeta?expand=projects.issuetypes.fields"
+
+{ "expand" : "projects",
+  "projects" : [ { "avatarUrls" : { "16x16" : "https://adqa-dev.atlassian.net/secure/projectavatar?size=xsmall&avatarId=10011",
+            "24x24" : "https://adqa-dev.atlassian.net/secure/projectavatar?size=small&avatarId=10011",
+            "32x32" : "https://adqa-dev.atlassian.net/secure/projectavatar?size=medium&avatarId=10011",
+            "48x48" : "https://adqa-dev.atlassian.net/secure/projectavatar?avatarId=10011"
+          },
+        "expand" : "issuetypes",
+        "id" : "10000",
+        "issuetypes" : [ { "description" : "",
+              "expand" : "fields",
+              "fields" : { "customfield_10027" : { "allowedValues" : [ 
+                          { "id" : "10001",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10001",
+                            "value" : "Ad repetition"
+                          },
+                          { "id" : "10002",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10002",
+                            "value" : "Ad adjacency"
+                          },
+                          { "id" : "10003",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10003",
+                            "value" : "Ad quality"
+                          },
+                          { "id" : "10004",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10004",
+                            "value" : "Ad not appropriate for content"
+                          },
+                          { "id" : "10005",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10005",
+                            "value" : "Ad clips the content"
+                          },
+                          { "id" : "10006",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10006",
+                            "value" : "Ad is cut off either at beginning or end"
+                          }
+                        ],
+                      "hasDefaultValue" : false,
+                      "name" : "Issue Description",
+                      "operations" : [ "add",
+                          "set",
+                          "remove"
+                        ],
+                      "required" : false,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+                          "customId" : 10027,
+                          "items" : "string",
+                          "type" : "array"
+                        }
+                    },
+                  "customfield_10028" : { "allowedValues" : [ { "children" : [ { "id" : "10013",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10013",
+                                  "value" : "Legacy Box"
+                                },
+                                { "id" : "10014",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10014",
+                                  "value" : "X1 Box"
+                                },
+                                { "id" : "10015",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10015",
+                                  "value" : "X1 Companion Box"
+                                }
+                              ],
+                            "id" : "10010",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10010",
+                            "value" : "Live TV"
+                          },
+                          { "children" : [ { "id" : "10016",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10016",
+                                  "value" : "Legacy Box"
+                                },
+                                { "id" : "10017",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10017",
+                                  "value" : "X1 Box"
+                                },
+                                { "id" : "10018",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10018",
+                                  "value" : "X1 Companion Box"
+                                }
+                              ],
+                            "id" : "10011",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10011",
+                            "value" : "On Demand"
+                          },
+                          { "children" : [ { "id" : "10019",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10019",
+                                  "value" : "Legacy Box"
+                                },
+                                { "id" : "10020",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10020",
+                                  "value" : "X1 Box"
+                                },
+                                { "id" : "10021",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10021",
+                                  "value" : "X1 Companion Box"
+                                }
+                              ],
+                            "id" : "10012",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10012",
+                            "value" : "DVR"
+                          }
+                        ],
+                      "hasDefaultValue" : false,
+                      "name" : "Device - Set Top Box",
+                      "operations" : [ "set" ],
+                      "required" : false,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect",
+                          "customId" : 10028,
+                          "items" : "string",
+                          "type" : "array"
+                        }
+                    },
+                  "customfield_10030" : { "allowedValues" : [ { "children" : [ { "id" : "10040",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10040",
+                                  "value" : "Windows"
+                                },
+                                { "id" : "10041",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10041",
+                                  "value" : "Mac"
+                                },
+                                { "id" : "10042",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10042",
+                                  "value" : "Website"
+                                },
+                                { "id" : "10043",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10043",
+                                  "value" : "Network Specific Website"
+                                },
+                                { "id" : "10044",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10044",
+                                  "value" : "Browser Issue"
+                                }
+                              ],
+                            "id" : "10022",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10022",
+                            "value" : "Live Streaming Desktop/Laptop"
+                          },
+                          { "children" : [ { "id" : "10045",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10045",
+                                  "value" : "iOS App"
+                                },
+                                { "id" : "10046",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10046",
+                                  "value" : "Android App"
+                                },
+                                { "id" : "10047",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10047",
+                                  "value" : "Network Specific App"
+                                }
+                              ],
+                            "id" : "10023",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10023",
+                            "value" : "Live Streaming Phone/Tablet"
+                          },
+                          { "children" : [ { "id" : "10033",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10033",
+                                  "value" : "Windows"
+                                },
+                                { "id" : "10034",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10034",
+                                  "value" : "Mac"
+                                },
+                                { "id" : "10035",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10035",
+                                  "value" : "Website"
+                                },
+                                { "id" : "10036",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10036",
+                                  "value" : "Network Specific Website"
+                                },
+                                { "id" : "10037",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10037",
+                                  "value" : "Browser Issue"
+                                }
+                              ],
+                            "id" : "10024",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10024",
+                            "value" : "On Demand Desktop/Laptop"
+                          },
+                          { "children" : [ { "id" : "10030",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10030",
+                                  "value" : "iOS App"
+                                },
+                                { "id" : "10031",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10031",
+                                  "value" : "Android App"
+                                },
+                                { "id" : "10032",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10032",
+                                  "value" : "Network Specific App"
+                                }
+                              ],
+                            "id" : "10025",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10025",
+                            "value" : "On Demand Phone/Tablet"
+                          },
+                          { "children" : [ { "id" : "10027",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10027",
+                                  "value" : "Website - Windows"
+                                },
+                                { "id" : "10038",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10038",
+                                  "value" : "Website - Mac"
+                                },
+                                { "id" : "10028",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10028",
+                                  "value" : "iOS App"
+                                },
+                                { "id" : "10039",
+                                  "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10039",
+                                  "value" : "Android App"
+                                }
+                              ],
+                            "id" : "10026",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10026",
+                            "value" : "DVR Recordings"
+                          }
+                        ],
+                      "hasDefaultValue" : false,
+                      "name" : "Device - Online",
+                      "operations" : [ "set" ],
+                      "required" : false,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect",
+                          "customId" : 10030,
+                          "items" : "string",
+                          "type" : "array"
+                        }
+                    },
+                  "customfield_10031" : { "hasDefaultValue" : false,
+                      "name" : "Additional Information",
+                      "operations" : [ "set" ],
+                      "required" : false,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+                          "customId" : 10031,
+                          "type" : "string"
+                        }
+                    },
+                  "customfield_10032" : { "hasDefaultValue" : false,
+                      "name" : "Issue - Network",
+                      "operations" : [ "set" ],
+                      "required" : true,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+                          "customId" : 10032,
+                          "type" : "string"
+                        }
+                    },
+                  "customfield_10033" : { "hasDefaultValue" : false,
+                      "name" : "Issue - Episode",
+                      "operations" : [ "set" ],
+                      "required" : true,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+                          "customId" : 10033,
+                          "type" : "string"
+                        }
+                    },
+                  "customfield_10034" : { "hasDefaultValue" : false,
+                      "name" : "Specific Ad",
+                      "operations" : [ "set" ],
+                      "required" : false,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+                          "customId" : 10034,
+                          "type" : "string"
+                        }
+                    },
+                  "customfield_10035" : { "allowedValues" : [ { "id" : "10048",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10048",
+                            "value" : "In-home"
+                          },
+                          { "id" : "10049",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10049",
+                            "value" : "Out-of-home"
+                          }
+                        ],
+                      "hasDefaultValue" : false,
+                      "name" : "Viewing Location",
+                      "operations" : [ "set" ],
+                      "required" : true,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                          "customId" : 10035,
+                          "type" : "string"
+                        }
+                    },
+                  "customfield_10036" : { "allowedValues" : [ { "id" : "10050",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10050",
+                            "value" : "Live"
+                          },
+                          { "id" : "10051",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/customFieldOption/10051",
+                            "value" : "Time-shifted"
+                          }
+                        ],
+                      "hasDefaultValue" : false,
+                      "name" : "Viewing Type",
+                      "operations" : [ "set" ],
+                      "required" : true,
+                      "schema" : { "custom" : "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                          "customId" : 10036,
+                          "type" : "string"
+                        }
+                    },
+                  "issuetype" : { "allowedValues" : [ { "avatarId" : 10300,
+                            "description" : "",
+                            "iconUrl" : "https://adqa-dev.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10300&avatarType=issuetype",
+                            "id" : "10000",
+                            "name" : "Ad Issue",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/issuetype/10000",
+                            "subtask" : false
+                          } ],
+                      "hasDefaultValue" : false,
+                      "name" : "Issue Type",
+                      "operations" : [  ],
+                      "required" : true,
+                      "schema" : { "system" : "issuetype",
+                          "type" : "issuetype"
+                        }
+                    },
+                  "project" : { "allowedValues" : [ { "avatarUrls" : { "16x16" : "https://adqa-dev.atlassian.net/secure/projectavatar?size=xsmall&avatarId=10011",
+                                "24x24" : "https://adqa-dev.atlassian.net/secure/projectavatar?size=small&avatarId=10011",
+                                "32x32" : "https://adqa-dev.atlassian.net/secure/projectavatar?size=medium&avatarId=10011",
+                                "48x48" : "https://adqa-dev.atlassian.net/secure/projectavatar?avatarId=10011"
+                              },
+                            "id" : "10000",
+                            "key" : "TP",
+                            "name" : "Test Project",
+                            "self" : "https://adqa-dev.atlassian.net/rest/api/2/project/10000"
+                          } ],
+                      "hasDefaultValue" : false,
+                      "name" : "Project",
+                      "operations" : [ "set" ],
+                      "required" : true,
+                      "schema" : { "system" : "project",
+                          "type" : "project"
+                        }
+                    },
+                  "summary" : { "hasDefaultValue" : false,
+                      "name" : "Summary",
+                      "operations" : [ "set" ],
+                      "required" : true,
+                      "schema" : { "system" : "summary",
+                          "type" : "string"
+                        }
+                    }
+                },
+              "iconUrl" : "https://adqa-dev.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10300&avatarType=issuetype",
+              "id" : "10000",
+              "name" : "Ad Issue",
+              "self" : "https://adqa-dev.atlassian.net/rest/api/2/issuetype/10000",
+              "subtask" : false
+            } ],
+        "key" : "TP",
+        "name" : "Test Project",
+        "self" : "https://adqa-dev.atlassian.net/rest/api/2/project/10000"
+      } ]
+}                              
+
+C:\Users\Guillaume>curl -u topcoder:pass1234 -X GET -H "Content-Type: application/json" "https://adqa-dev.atlassian.net/rest/api/2/myself"
+
+{ "active" : true,
+  "avatarUrls" : 
+    { "16x16" : "https://secure.gravatar.com/avatar/4dcaa3f9df6cc6ba745b3cfb83552cbd?d=mm&s=16",
+      "24x24" : "https://secure.gravatar.com/avatar/4dcaa3f9df6cc6ba745b3cfb83552cbd?d=mm&s=24",
+      "32x32" : "https://secure.gravatar.com/avatar/4dcaa3f9df6cc6ba745b3cfb83552cbd?d=mm&s=32",
+      "48x48" : "https://secure.gravatar.com/avatar/4dcaa3f9df6cc6ba745b3cfb83552cbd?d=mm&s=48"
+    },
+  "displayName" : "Topcoder User",
+  "emailAddress" : "harrywynn+topcoder@gmail.com",
+  "expand" : "groups",
+  "groups" : 
+    { "items" : [  ],
+      "size" : 1
+    },
+  "key" : "harrywynn+topcoder",
+  "locale" : "-1",
+  "name" : "topcoder",
+  "self" : "https://adqa-dev.atlassian.net/rest/api/2/user?username=topcoder",
+  "timeZone" : "America/New_York"
+}

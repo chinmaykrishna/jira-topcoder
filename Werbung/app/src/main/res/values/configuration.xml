@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aes_key">19D6DFD0BF612440214585203A5B5EB0</string>
+    <string name="aes_iv">6bYl7nm00btCvn8=</string>
+    <string name="base_url">https://adqa-dev.atlassian.net</string>
+</resources>
